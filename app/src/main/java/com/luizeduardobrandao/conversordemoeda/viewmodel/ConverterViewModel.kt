@@ -2,9 +2,10 @@ package com.luizeduardobrandao.conversordemoeda.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.luizeduardobrandao.conversordemoeda.model.ConverterCalculator
 
-class ConverterViewModel {
+class ConverterViewModel: ViewModel() {
 
     // 1) Estado da moeda selecionada
     private val _selectedCurrency = MutableLiveData<String?>()
