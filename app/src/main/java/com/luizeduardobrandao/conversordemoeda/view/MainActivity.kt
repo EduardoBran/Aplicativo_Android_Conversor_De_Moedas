@@ -35,10 +35,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         setListeners()
         setObservers()
-
     }
 
     private fun setListeners(){
