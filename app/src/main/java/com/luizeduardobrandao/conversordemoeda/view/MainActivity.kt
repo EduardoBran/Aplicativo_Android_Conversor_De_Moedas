@@ -1,7 +1,10 @@
 package com.luizeduardobrandao.conversordemoeda.view
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -56,6 +59,22 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, AboutActivity::class.java))
         }
 
+        // IME “Done” no campo de valor: esconde teclado e abre o dropdown de moeda
+        binding.edittextAmount.setOnEditorActionListener { v, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
+                // esconde o teclado
+                (getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager)
+                    .hideSoftInputFromWindow(v.windowToken, 0)
+
+                // já foca e abre o dropdown
+                binding.actvCurrency.requestFocus()
+                binding.actvCurrency.showDropDown()
+                true
+            } else {
+                false
+            }
+        }
+
         // Dropdown de moedas
         val currencies = CurrencyRepository.getCurrencies()
         val adapter = ArrayAdapter(
@@ -63,6 +82,7 @@ class MainActivity : AppCompatActivity() {
             android.R.layout.simple_list_item_1,
             currencies
         )
+
         binding.actvCurrency.setAdapter(adapter)
         binding.actvCurrency.setOnItemClickListener { _, _, pos, _ ->
             viewModel.setSelectedCurrency(currencies[pos])
