@@ -11,4 +11,6 @@
     <string name="btn_convert">Converter</string>
 
     <string name="cont_banner">Espaço para banner AdMob</string>
+
+    <string name="error_invalid_value">Valor inválido.</string>
 </resources>
