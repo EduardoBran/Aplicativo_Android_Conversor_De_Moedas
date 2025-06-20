@@ -3,6 +3,9 @@
 
     <string name="text_toolbar">Conversor de Moeda</string>
     <string name="text_subtitle">Converta Real para...</string>
+    <string name="text_title_about">Sobre</string>
+    <string name="desc_back">Voltar</string>
+    <string name="desc_about">Sobre</string>
 
     <string name="hint_value">Valor</string>
     <string name="hint_coin">Moeda</string>
@@ -13,4 +16,14 @@
     <string name="cont_banner">Espaço para banner AdMob</string>
 
     <string name="error_invalid_value">Valor inválido.</string>
+
+    <string name="text_about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus mauris eu suscipit dictum. Phasellus velit ipsum, facilisis quis malesuada ac, ornare ut lacus. Aliquam in tristique erat, vitae molestie mi. Ut mollis id ipsum sed tempus. Integer aliquam venenatis facilisis. Duis et ornare massa, in posuere ligula. Nam pellentesque lacus sed massa fermentum tincidunt. Sed nec orci eu quam lobortis placerat sit amet eget orci. Praesent eleifend tortor eget est volutpat congue.
+
+Donec ac vestibulum tellus. Donec porta urna sit amet risus accumsan, sit amet tincidunt nulla laoreet. Fusce volutpat ultricies magna, pulvinar volutpat ex feugiat sed. Ut vel lobortis velit. Donec a convallis justo, consequat bibendum massa. Phasellus viverra nunc in odio vulputate, eget eleifend mi ultricies. Cras ligula nunc, imperdiet ultricies mollis sit amet, cursus ut magna.
+
+Nunc accumsan ex a nisl feugiat, eget aliquam tortor tempus. Ut semper, nulla sit amet consectetur efficitur, ex nibh vehicula dui, in fermentum turpis justo et dolor. Nulla et dui gravida, congue metus id, bibendum ligula. Quisque dolor ligula, congue sit amet mi sit amet, pharetra imperdiet mi. Etiam placerat accumsan purus, eu tempor nunc facilisis in. Morbi malesuada lacus et lorem consequat, sit amet condimentum ligula luctus. Sed pellentesque aliquet dui, quis consectetur erat posuere eget. Vestibulum quis commodo felis. Vestibulum sit amet nunc in lectus aliquet pellentesque ac sed enim. Pellentesque volutpat magna eget cursus congue. Duis vel bibendum ante. Quisque eget risus dolor. Mauris tincidunt urna mi, a ultrices justo cursus id. Duis vitae semper est. Aliquam lobortis tempus velit. Sed finibus mollis dignissim.
+
+Etiam in auctor enim. Sed quis facilisis velit. Nam facilisis pulvinar lacus, suscipit bibendum sem varius vel. Maecenas imperdiet viverra feugiat. Quisque efficitur arcu tempor, dapibus dolor et, vestibulum tellus. Ut et quam et lectus porta elementum. Nunc finibus ante ac orci luctus lacinia. Nam ac elit lectus. Praesent tincidunt ipsum non commodo sagittis.
+
+Ut vel bibendum augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut diam tellus. Vivamus eu urna vitae leo pellentesque ornare sit amet a leo. Nam dictum porta laoreet. Mauris vitae lacus faucibus, vehicula mauris nec, euismod odio. Quisque viverra finibus sapien sed bibendum. Fusce feugiat bibendum sem, at sollicitudin nulla eleifend in. Mauris eget imperdiet metus. Donec rhoncus pharetra ultrices. Morbi vel tincidunt justo. Quisque ultrices nulla odio, ac ultricies lorem blandit in. Sed ut dictum sem. Curabitur vitae felis a dui tincidunt vulputate. Etiam quis faucibus diam, aliquam cursus lacus. Donec egestas ultricies consectetur.</string>
 </resources>

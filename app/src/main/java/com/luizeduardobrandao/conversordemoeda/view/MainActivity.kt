@@ -1,5 +1,6 @@
 package com.luizeduardobrandao.conversordemoeda.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         // 2) Configura a Toolbar como ActionBar
         setSupportActionBar(binding.toolbarMain)
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -48,6 +50,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setListeners(){
+
+        // --- aqui adicionamos o click no ícone para ir ao AboutActivity ---
+        binding.icForward.setOnClickListener {
+            startActivity(Intent(this, AboutActivity::class.java))
+        }
+
         // Dropdown de moedas
         val currencies = CurrencyRepository.getCurrencies()
         val adapter = ArrayAdapter(

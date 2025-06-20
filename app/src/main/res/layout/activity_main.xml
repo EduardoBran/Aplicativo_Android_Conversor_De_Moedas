@@ -67,15 +67,14 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/purple_500"
-        android:titleTextColor="@color/white"
         app:layout_constraintBottom_toTopOf="@id/gh10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/gh0">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:autoSizeMaxTextSize="24sp"
             android:autoSizeMinTextSize="16sp"
             android:autoSizeStepGranularity="2sp"
@@ -84,8 +83,20 @@
             android:maxLines="1"
             android:text="@string/text_toolbar"
             android:textColor="@color/white"
-            android:textSize="48sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
+
+        <!-- Ícone de voltar no canto direito -->
+        <ImageButton
+            android:id="@+id/ic_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:padding="16dp"
+            android:backgroundTint="@color/purple_500"
+            app:tint="@color/white"
+            android:src="@drawable/ic_arrow_forward"
+            android:contentDescription="@string/desc_back"/>
 
     </androidx.appcompat.widget.Toolbar>
 
