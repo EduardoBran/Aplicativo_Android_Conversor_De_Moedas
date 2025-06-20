@@ -1,4 +1,4 @@
 package com.luizeduardobrandao.conversordemoeda.model
 
-class CurrencyConverter {
+class ConverterCalculator {
 }

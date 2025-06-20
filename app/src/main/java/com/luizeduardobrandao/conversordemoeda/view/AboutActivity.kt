@@ -1,4 +1,4 @@
-package com.luizeduardobrandao.conversordemoeda.viewmodel
+package com.luizeduardobrandao.conversordemoeda.view
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
