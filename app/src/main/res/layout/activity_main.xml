@@ -140,7 +140,6 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:hint="@string/hint_coin"
         app:layout_constraintBottom_toTopOf="@id/btn_convert"
         app:layout_constraintEnd_toEndOf="@id/vg70"
@@ -159,7 +158,7 @@
         android:id="@+id/btn_convert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:text="@string/btn_convert"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@id/card_result"
@@ -172,7 +171,7 @@
         android:id="@+id/card_result"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="4dp"
         app:layout_constraintBottom_toBottomOf="@id/gh85"
@@ -195,7 +194,7 @@
 
     <!-- 4) Placeholder para banner -->
     <FrameLayout
-        android:id="@+id/banner_container"
+        android:id="@+id/bannerContainer"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/gh100"

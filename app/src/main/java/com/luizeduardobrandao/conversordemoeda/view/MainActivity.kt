@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.luizeduardobrandao.conversordemoeda.R
 import com.luizeduardobrandao.conversordemoeda.databinding.ActivityMainBinding
+import com.luizeduardobrandao.conversordemoeda.repository.BannerRepository
 import com.luizeduardobrandao.conversordemoeda.repository.CurrencyRepository
 import com.luizeduardobrandao.conversordemoeda.viewmodel.ConverterViewModel
 
@@ -35,8 +36,15 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        // inicializa SDK
+        BannerRepository.initialize(this)
+
         setListeners()
         setObservers()
+
+        // carrega o banner no container da view binding
+        BannerRepository.loadBanner(this, binding.bannerContainer)
     }
 
     private fun setListeners(){
